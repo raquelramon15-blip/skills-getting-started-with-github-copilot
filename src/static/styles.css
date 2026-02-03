@@ -163,10 +163,35 @@ footer {
   color: #444;
 }
 .participants-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
   margin-bottom: 6px;
   background: rgba(26,35,126,0.03);
   padding: 6px 8px;
   border-radius: 4px;
+}
+
+.participant-email {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.delete-btn {
+  border: none;
+  background: transparent;
+  color: #c62828;
+  font-size: 1rem;
+  line-height: 1;
+  cursor: pointer;
+  padding: 4px 6px;
+  border-radius: 4px;
+}
+.delete-btn:hover {
+  background: rgba(198,40,40,0.08);
 }
 .participants-empty {
   font-size: 0.9rem;
